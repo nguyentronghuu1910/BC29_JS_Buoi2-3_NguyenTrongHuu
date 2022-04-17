@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JS Buổi 2-3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Bài tập 1  -->
+
+    <section class="container">
+        <div class="row">
+            <div class="card col-xl">
+                <div class="card-header">
+                    <h3>Bài tập 1</h3>
+                </div>
+                <div class="card-body">
+                    <h6>Đầu vào</h6>
+                    <p>Lương 1 ngày nhân viên</p>
+                    <h6>Xử lý</h6>
+                    <p>Số ngày nhân viên làm</p>
+                    <p>Lương 1 ngày * số giờ làm</p>
+                    <h6>Đầu ra</h6>
+                    <p>Tiền lương nhân viên</p>
+                    <div class="form-group">
+                        <label for="">Số ngày làm</label>
+                        <input id="soNgayLam" type="text" value="">
+                        <button id="btnclick" class="btn btn-success">Tính Lương</button>
+                    </div>
+                    <div id="footerNgaycong" class="card-footer text-muted"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bài tập 2  -->
+
+    <section class="container">
+        <div class="row">
+            <div class="card col-xl">
+                <div class="card-header">
+                    <h3>Bài tập 2</h3>
+                </div>
+                <div class="card-body">
+                    <h6>Đầu vào</h6>
+                    <p>Nhập vào 5 hàng số thực</p>
+                    <h6>Xử lý</h6>
+                    <p>Giá trị trung bình = lấy 5 hàng số này chia cho 5</p>
+                    <h6>Đầu ra</h6>
+                    <p>Giá trị trung bình</p>
+                    <div class="form-group">
+                        <label for="">Giá trị 5 số</label> <br />
+                        <input id="a" type="text" value=""><br />
+                        <input id="b" type="text" value=""><br />
+                        <input id="c" type="text" value=""><br />
+                        <input id="d" type="text" value=""><br />
+                        <input id="e" type="text" value=""><br /><br />
+                        <button id="btn_giatri" class="btn btn-warning"> Giá Trị Trung Bình</button>
+                    </div>
+                    <div id="footerGiatritb" class="card-footer text-muted"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bài tập 3  -->
+
+    <section class="container">
+        <div class="row">
+            <div class="card col-xl">
+                <div class="card-header">
+                    <h3>Bài Tập 3</h3>
+                </div>
+                <div class="card-body">
+                    <h6>Đầu vào</h6>
+                    <p>Giá USD sang VNĐ : 23.500vnđ</p>
+                    <p>Số tiền USD ($)</p>
+                    <h6>Xử lý</h6>
+                    <p>Quy đổi số tiền USD sang VNĐ = Giá USD * 23.500</p>
+                    <h6>Đầu ra</h6>
+                    <p>Số tiền được quy đổi từ USD sang VNĐ</p>
+                    <div class="form-group">
+                        <label for="">Số Tiền USD ($)</label>
+                        <input id="tienUsd" type="number" value="">
+                        <button id="raTien" class="btn btn-info"> Chuyển Sang Tiền VNĐ</button>
+                    </div>
+                    <div id="footerUsd" class="card-footer text-muted"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bài tập 4  -->
+
+    <section class="container">
+        <div class="row">
+            <div class="card col-xl">
+                <div class="card-header">
+                    <h3>Bài Tập 4</h3>
+                </div>
+                <div class="card-body">
+                    <h6>Đầu vào</h6>
+                    <p>Số chiều dài hình chữ nhật</p>
+                    <p>Số chiều rộng hình chữ nhật</p>
+                    <h6>Xử lý</h6>
+                    <p>Tính Diện Tích : dài * rộng</p>
+                    <p>Tính Chu Vi : ( dài + rộng ) * 2</p>
+                    <h6>Đầu ra</h6>
+                    <p>Tính & xuất ra diện tích, chu vi của hình chữ nhật</p>
+                    <div class="form-group">
+                        <label for="">Chiều dài</label>
+                        <input id="chieuDai" type="number" value="">
+                        <label for="">Chiều Rộng</label>
+                        <input id="chieuRong" type="number" value="">
+                        <button id="btnHcn" class="btn btn-dark"> Tính Chu Vi và Diện Tích</button>
+                    </div>
+                    <div id="footerHcn" class="card-footer text-muted"></div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Bài tập 5  -->
+
+    <section class="container">
+        <div class="row">
+            <div class="card col-xl">
+                <div class="card-header">
+                    <h3>Bài Tập 5</h3>
+                </div>
+                <div class="card-body">
+                    <h6>Đầu vào</h6>
+                    <p>Nhập 1 số có 2 chữ số bất kỳ</p>
+                    <h6>Xử lý</h6>
+                    <p>tách hàng đơn vị và hàng chục cả số</p>
+                    <p>lấy 2 số tách được cộng lại</p>
+                    <h6>Đầu ra</h6>
+                    <p>Tính tổng của số vừa nhập</p>
+                    <div class="form-group">
+                        <label for="">Số có 2 chữ số</label>
+                        <input id="soNguyen" type="number" value="">
+                        <button id="btnNumber" class="btn btn-danger">Tính tổng 2 chữ số</button>
+                    </div>
+                    <div id="footersoNguyen" class="card-footer text-muted"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- của tui  -->
+    <script src="./main.js" defer></script>
+</body>
+
+</html>
