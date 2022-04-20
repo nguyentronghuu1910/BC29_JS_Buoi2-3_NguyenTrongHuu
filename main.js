@@ -10,7 +10,7 @@
  * - Đầu ra :
  *   + Tiền lương nhân viên
  */
-document.getElementById("btnclick").onclick = function (params) {
+document.getElementById("btnclick").onclick = function () {
   var luongNgay = 100000;
   var soNgayLam = document.getElementById("soNgayLam").value;
   var luongNv = luongNgay * soNgayLam;
@@ -34,7 +34,7 @@ document.getElementById("btnclick").onclick = function (params) {
  *   + giaTri_TB
  */
 
-document.getElementById("btn_giatri").onclick = function (params){
+document.getElementById("btn_giatri").onclick = function (){
     var a = document.getElementById("a").value*1 ;
     var b = document.getElementById("b").value*1 ;
     var c = document.getElementById("c").value*1 ;
@@ -63,7 +63,7 @@ document.getElementById("footerGiatritb").innerHTML = "Giá trị trung bình c�
  * - Đầu ra :
  *   + Giá quy đổi từ USD sang VNĐ ;
  */
-document.getElementById("raTien").onclick = function (params){
+document.getElementById("raTien").onclick = function (){
 
     var tienUsd = document.getElementById("tienUsd").value*1 ;
     var tienVnd = 23500;
@@ -91,7 +91,7 @@ document.getElementById("raTien").onclick = function (params){
  *   + Tính & xuất ra diện tích, chu vi của hình chữ nhật ;
  *
  */
-document.getElementById("btnHcn").onclick = function (params){
+document.getElementById("btnHcn").onclick = function (){
     var chieuDai = document.getElementById("chieuDai").value*1 ;
     var chieuRong = document.getElementById("chieuRong").value*1 ;
     // Tính chu vi, diện tích 
@@ -121,7 +121,7 @@ document.getElementById("btnHcn").onclick = function (params){
  *   + Tính tổng của số vừa nhập ;
  */
 
-document.getElementById("btnNumber").onclick = function (params){
+document.getElementById("btnNumber").onclick = function (){
     var soNguyen = document.getElementById("soNguyen").value*1 ;
     var hangDv = soNguyen % 10 ;
     hangDv = parseInt(hangDv) ;
