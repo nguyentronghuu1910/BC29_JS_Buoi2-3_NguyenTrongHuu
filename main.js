@@ -16,8 +16,10 @@ document.getElementById("btnclick").onclick = function () {
   var luongNv = luongNgay * soNgayLam;
   // format vnđ
   var currentFormat = new Intl.NumberFormat("vn-VN");
-  document.getElementById("footerNgaycong").innerHTML = "Tiền lương nhân viên nhận được là : " + currentFormat.format(luongNv) + " VNĐ " ;
-
+  document.getElementById("footerNgaycong").innerHTML =
+    "Tiền lương nhân viên nhận được là : " +
+    currentFormat.format(luongNv) +
+    " VNĐ ";
 };
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -34,19 +36,20 @@ document.getElementById("btnclick").onclick = function () {
  *   + giaTri_TB
  */
 
-document.getElementById("btn_giatri").onclick = function (){
-    var a = document.getElementById("a").value*1 ;
-    var b = document.getElementById("b").value*1 ;
-    var c = document.getElementById("c").value*1 ;
-    var d = document.getElementById("d").value*1 ;
-    var e = document.getElementById("e").value*1 ;
+document.getElementById("btn_giatri").onclick = function () {
+  var a = document.getElementById("a").value * 1;
+  var b = document.getElementById("b").value * 1;
+  var c = document.getElementById("c").value * 1;
+  var d = document.getElementById("d").value * 1;
+  var e = document.getElementById("e").value * 1;
 
-    var numberTB = 5 ;
-    var numberTong = (a + b + c + d + e) ;
+  var numberTB = 5;
+  var numberTong = a + b + c + d + e;
 
-    var giaTri_TB = numberTong / numberTB ;
-// console.log("Giá trị trung bình của 5 số là : " + giaTri_TB);
-document.getElementById("footerGiatritb").innerHTML = "Giá trị trung bình của 5 số là : " + giaTri_TB ;
+  var giaTri_TB = numberTong / numberTB;
+  // console.log("Giá trị trung bình của 5 số là : " + giaTri_TB);
+  document.getElementById("footerGiatritb").innerHTML =
+    "Giá trị trung bình của 5 số là : " + giaTri_TB;
 };
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,17 +66,18 @@ document.getElementById("footerGiatritb").innerHTML = "Giá trị trung bình c�
  * - Đầu ra :
  *   + Giá quy đổi từ USD sang VNĐ ;
  */
-document.getElementById("raTien").onclick = function (){
+document.getElementById("raTien").onclick = function () {
+  var tienUsd = document.getElementById("tienUsd").value * 1;
+  var tienVnd = 23500;
 
-    var tienUsd = document.getElementById("tienUsd").value*1 ;
-    var tienVnd = 23500;
-
-    var raTien = tienUsd * tienVnd ;
-    // format vnđ
-    var currentFormat = new Intl.NumberFormat("vn-VN");
-    document.getElementById("footerUsd").innerHTML = "Số tiền quy đổi từ USD($) sang VNĐ là : " + currentFormat.format(raTien) + " VNĐ " ;
+  var raTien = tienUsd * tienVnd;
+  // format vnđ
+  var currentFormat = new Intl.NumberFormat("vn-VN");
+  document.getElementById("footerUsd").innerHTML =
+    "Số tiền quy đổi từ USD($) sang VNĐ là : " +
+    currentFormat.format(raTien) +
+    " VNĐ ";
 };
-
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -91,20 +95,19 @@ document.getElementById("raTien").onclick = function (){
  *   + Tính & xuất ra diện tích, chu vi của hình chữ nhật ;
  *
  */
-document.getElementById("btnHcn").onclick = function (){
-    var chieuDai = document.getElementById("chieuDai").value*1 ;
-    var chieuRong = document.getElementById("chieuRong").value*1 ;
-    // Tính chu vi, diện tích 
-    var chuVi = (chieuDai + chieuRong) * 2 ;
-    var dienTich = chieuDai * chieuRong ;
+document.getElementById("btnHcn").onclick = function () {
+  var chieuDai = document.getElementById("chieuDai").value * 1;
+  var chieuRong = document.getElementById("chieuRong").value * 1;
+  // Tính chu vi, diện tích
+  var chuVi = (chieuDai + chieuRong) * 2;
+  var dienTich = chieuDai * chieuRong;
 
-    var result ="";
-    result +="<p>Chu vi là : " + chuVi + "</p>";
-    result +="<p>Diện Tích là : " + dienTich + "</p>";
-   
-    document.getElementById("footerHcn").innerHTML = result ;
+  var result = "";
+  result += "<p>Chu vi là : " + chuVi + "</p>";
+  result += "<p>Diện Tích là : " + dienTich + "</p>";
+
+  document.getElementById("footerHcn").innerHTML = result;
 };
-
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -121,17 +124,16 @@ document.getElementById("btnHcn").onclick = function (){
  *   + Tính tổng của số vừa nhập ;
  */
 
-document.getElementById("btnNumber").onclick = function (){
-    var soNguyen = document.getElementById("soNguyen").value*1 ;
-    var hangDv = soNguyen % 10 ;
-    hangDv = parseInt(hangDv) ;
+document.getElementById("btnNumber").onclick = function () {
+  var soNguyen = document.getElementById("soNguyen").value * 1;
+  var hangDv = soNguyen % 10;
+  hangDv = parseInt(hangDv);
 
-    var hangChuc = soNguyen / 10 ;
-    hangChuc = parseInt(hangChuc) ;
+  var hangChuc = soNguyen / 10;
+  hangChuc = parseInt(hangChuc);
 
-    var tongsoNguyen = hangDv + hangChuc ;
+  var tongsoNguyen = hangDv + hangChuc;
 
-    document.getElementById("footersoNguyen").innerHTML = " Tổng 2 chữ số là : " + tongsoNguyen ;
+  document.getElementById("footersoNguyen").innerHTML =
+    " Tổng 2 chữ số là : " + tongsoNguyen;
 };
-
-
